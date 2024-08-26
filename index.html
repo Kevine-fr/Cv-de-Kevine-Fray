@@ -3,12 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cv de DIANTOUADI-FRAY</title>
-    <!-- Inclure Bootstrap CSS -->
+    <title>Cv de Kévine Diantouadi-Fray</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- Inclure Bootstrap Icons CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
-    <!-- Inclure FontAwesome -->
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 </head>
 
@@ -16,7 +14,7 @@
     
     body {
     font-family: 'Times New Roman', Times, serif;
-    background-color: black;
+    background-color: #E5E5E5;
 }
     hr {
         flex-grow: 1;
@@ -37,6 +35,7 @@
     }
     .body{
         width: 100%;
+        margin-bottom: 15px;
     }
     .left{
         width: 30%;
@@ -44,13 +43,54 @@
         padding: 15px 15px 5px 15px;
         background-color: #efeff0;
     }
+
+    .social-icons {
+    display: flex;
+    gap: 15px; 
+    }
+
+    .social-icon {
+        text-decoration: none;
+        color: #000; 
+        font-size: 24px;
+        transition: color 0.3s ease; 
+    }
+
+    .social-icon:hover {
+        color: #0077b5; 
+    }
+
+    .social-icon:hover .fa-instagram {
+        color: #C13584;
+    }
+
+    .my-linkdin-account{
+        color: black;
+        font-size: 13.5px;
+    }
+
+    .my-ig-account{
+        color: black;
+        font-size: 13.5px;
+    }
+
+    .my-ig-account:hover{
+        text-decoration: none;
+        color: #C13584;
+    }
+
+    .my-linkdin-account:hover{
+        text-decoration: none;
+        color: #0077b5;
+    }
+
     .right{
         width: 70%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         padding: 15px 15px 5px 15px;
         background-color: white;
+
     }
     .competences{
         font-weight: 600;
@@ -60,7 +100,7 @@
     }
     .vertical-line {
         border-left: 1px solid #848484; 
-        height: 100px; 
+        height: 60px; 
     }
     .content{
         width: 100%;
@@ -72,17 +112,17 @@
         width: 70%;
 
     }
-
+    
 </style>
 
 <body>
-    <div class="container">
+    <div class="container-fluid">
         <div class="head bg-dark rounded">
             <div class="head-row-1">
                 <center><h5 class="text-secondary">K | D</h5></center>
             </div>
             <div class="head-row-2 pt-1">
-                <center><h4>K é v i n e | D I A N T O U A D I - F R A Y</h4></center>
+                <center><h4 id="prenom-display"></h4></center>
             </div>
             <div class="head-row-3 py-1">
                 <hr class="bg-white">
@@ -108,16 +148,22 @@
 
         <div class="body d-flex">
             <div class="left">
+
+                <div class="d-flex justify-content-center pb-2">
+                    <img src="Kevine.jpg" alt="" width="175" height="150" class="rounded-circle">
+                </div>
+
                 <hr class="bg-dark my-1">
                 <center><p class="competences text-dark m-0 p-0 small">C O M P E T E N C E S</p></center>
                 <hr class="bg-dark my-1">
 
                 <div class="py-3">
-                    <li class="small text-secondary">Flutter/Dart</li>
+                    <li class="small text-secondary">React Native</li>
+                    <li class="small text-secondary pt-1">Flutter/Dart</li>
                     <li class="small text-secondary pt-1">Laravel/PHP</li>
                     <li class="small text-secondary pt-1">Node.Js/Js</li>
-                    <li class="small text-secondary pt-1">HTML/CSS</li>
-                    <li class="small text-secondary pt-1">Python</li>
+                    <li class="small text-secondary pt-1">Docker/Jenkins</li>
+                    <li class="small text-secondary pt-1">HTML/CSS (Bootstrap 5)</li>
                 </div>
 
                 <hr class="bg-dark my-1">
@@ -125,8 +171,8 @@
                 <hr class="bg-dark my-1">
 
                 <div class="py-3">
-                    <li class="small text-secondary ">Français</li>
-                    <li class="small text-secondary pt-1">Anglais</li>
+                    <li class="small text-secondary ">Français : Langue maternelle</li>
+                    <li class="small text-secondary pt-1">Anglais : Intermédiaire B1</li>
                 </div>
 
                 <hr class="bg-dark my-1">
@@ -135,7 +181,7 @@
 
                 <div class="py-3">
                     <li class="small text-secondary">Basketball</li>
-                    <li class="small text-secondary pt-1">Football</li>
+                    <li class="small text-secondary pt-1">Musculation</li>
                 </div>
 
                 <hr class="bg-dark my-1">
@@ -143,14 +189,56 @@
                 <hr class="bg-dark my-1">
 
                 <div class="py-3">
-                    <li class="small text-secondary">Esprit créatif</li>
-                    <li class="small text-secondary pt-1">Adaptabilité</li>
+                    <li class="small text-secondary">Esprit d'équipe</li>
+                    <li class="small text-secondary pt-1">Curieux</li>
                 </div>
+
+                <hr class="bg-dark my-1">
+                <center><p class="competences text-dark m-0 p-0 small">O U T I L S | U T I L I S É</p></center>
+                <hr class="bg-dark my-1">
+
+                <div class="py-3">
+                    <li class="small text-secondary">Vscode/IntelliJ</li>
+                    <li class="small text-secondary pt-1">Jira/Trello</li>
+                    <li class="small text-secondary pt-1">Postman/StarUML</li>
+                </div>
+
+                <hr class="bg-dark my-1">
+                <center><p class="competences text-dark m-0 p-0 small">R É S E A U X</p></center>
+                <hr class="bg-dark my-1">
+
+                <div class="pt-1 d-flex align-items-center">
+                    <a href="https://www.linkedin.com" target="_blank" class="social-icon">
+                        <i class="fab fa-linkedin"></i> 
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/kevine-diantouadi-fray-85a3a0240/" class="my-linkdin-account pl-2">
+                        <p class="m-0">: @Kevine Diantouadi-Fray</p>
+                    </a>
+                </div>
+
+                <div class="pt-1 d-flex align-items-center">
+                    <a href="https://www.instagram.com" class="social-icon">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/zstin4/" class="my-ig-account pl-2">
+                        <p class="m-0">: @Zstin4</p>
+                    </a>
+                </div>
+
+                
 
             </div>
     
             <div class="right">
-                <p class="profil small text-secondary">Avec une passion inébranlable pour le web et les applications mobiles, je me suis dédié à maîtriser l'art du développement Full Stack, ce qui m'a façonné en un professionnel polyvalent et compétent. Diplômé en génie logiciel, j'ai développé une expertise technique approfondie, maniant avec aisance une multitude de frameworks, bibliothèques et langages de programmation. Mon éventail de compétences couvre le développement mobile avec Flutter et Dart, le backend avec Laravel/PHP, ainsi que le frontend avec React/JS. Je suis également versé dans l'utilisation de Python pour accomplir une diversité de projets, témoignant de ma capacité à m'adapter et à innover dans l'écosystème dynamique du développement logiciel.</p>
+                <div class="d-flex justify-content-center">
+                    <h5>P R O F I L</h5>
+                </div>
+                
+                <p class="profil small text-secondary">À la recherche d'un contrat d’apprentissage pour le poste de Développeur Full
+                    Stack avec un rythme 1 semaine à l'école et 3 semaines en l'entreprise.
+                </p>
                 <div class="py-2">
                     <hr class="bg-dark my-1">
                         <p class="competences text-dark m-0 p-0 small">E X P E R I E N C E S | P R O F E S S I O N N E L L E S</p>
@@ -158,18 +246,39 @@
                 </div>
                 <div class="py-2 d-flex content">
                     <div class="pr-2 sub-content">
-                        <p class="competences text-dark small p-0 m-0">WEBHELP, Dakar</p>
-                        <p class="small p-0 m-0 text-secondary">Sept. 2023 - janv. 2024</p>
+                        <p class="competences text-dark small p-0 m-0">ENGLISH FB-CENTER</p>
+                        <p class="small p-0 m-0 text-secondary">Oct. 2023 - Janv. 2024</p>
                     </div>
                     <div class="d-flex last-content">
                         <div class="d-flex">
                             <div class="vertical-line"></div>
                             <div class="pl-3">
-                                <p class="competences p-0 m-0 small text-dark">CONSEILLER CLIENT</p>
+                                <p class="competences p-0 m-0 small text-dark">FREELANCE - Développement Mobile & Web</p>
                                 <div class="text-secondary">
-                                    <li class="small">Expert en gestion de la relation client chez Carrefour</li>
-                                    <li class="small">Résolution efficace des litiges clients</li>
-                                    <li class="small">Capacité à apaiser et fidéliser la clientèle</li>
+                                    <li class="small">Conception et Création de la base de données avec <strong>MangoDB</strong>.</li>
+                                    <li class="small">Conception, Développement, Implémentation & Déploiement des API avec <strong>Laravel</strong>.</li>
+                                    <li class="small">Création de l'application mobile avec <strong>Flutter</strong>.</li>
+                                    <li class="small">Création du site web avec <strong>Node.Js</strong></li>
+                                </div>
+                            </div>  
+                        </div>                      
+                    </div>
+                </div>
+
+                <div class="py-2 d-flex content">
+                    <div class="pr-2 sub-content">
+                        <p class="competences text-dark small p-0 m-0">DomCarCenter</p>
+                        <p class="small p-0 m-0 text-secondary">Juil. 2023 - Sept. 2023</p>
+                    </div>
+                    <div class="d-flex last-content">
+                        <div class="d-flex">
+                            <div class="vertical-line"></div>
+                            <div class="pl-3">
+                                <p class="competences p-0 m-0 small text-dark">STAGIAIRE - Développement Full Stack</p>
+                                <div class="text-secondary">
+                                    <li class="small">Conception et Création de la base de données avec <strong>MySQL</strong>.</li>
+                                    <li class="small">Création des DashBoards avec <strong>Laravel</strong>.</li>
+                                    <li class="small">Développement de l'interface utilisateur avec <strong>React Native</strong>.</li>
                                 </div>
                             </div>  
                         </div>                      
@@ -181,7 +290,46 @@
                         <p class="competences text-dark m-0 p-0 small">P A R C O U R S  |  S C O L A I R E</p>
                     <hr class="bg-dark my-1">
                 </div>
-                <div class="py-2 d-flex content">
+
+                <div class="pt-2 d-flex content">
+                    <div class="pr-2 sub-content">
+                        <p class="competences text-dark small p-0 m-0">EPSI, Paris</p>
+                        <p class="small p-0 m-0 text-secondary">Mars. 2024 - Juillet. 2024</p>
+                    </div>
+                    <div class="d-flex last-content">
+                        <div class="d-flex">
+                            <div class="vertical-line"></div>
+                            <div class="pl-3">
+                                <p class="competences p-0 m-0 small text-dark">Msc Expert en informatique et système d'information</p>
+                                <div class="text-secondary">
+                                    <p class="small">Obtention de l'attestation de réussite.</p>
+                                </div>
+                            </div>  
+                        </div>                      
+                    </div>
+                    
+                </div>
+
+                <div class="d-flex content">
+                    <div class="pr-2 sub-content">
+                        <p class="competences text-dark small p-0 m-0">ISI, Sénégal</p>
+                        <p class="small p-0 m-0 text-secondary">Sept. 2020 - Juillet. 2023</p>
+                    </div>
+                    <div class="d-flex last-content">
+                        <div class="d-flex">
+                            <div class="vertical-line"></div>
+                            <div class="pl-3">
+                                <p class="competences p-0 m-0 small text-dark">Génie Logiciel</p>
+                                <div class="text-secondary">
+                                    <p class="small">Obtention de la licence professionnelle génie logiciel avec mention Très Bien.</p>
+                                </div>
+                            </div>  
+                        </div>                      
+                    </div>
+                    
+                </div>
+
+                <div class="pb-2 d-flex content">
                     <div class="pr-2 sub-content">
                         <p class="competences text-dark small p-0 m-0">COUSTEAU, Abidjan</p>
                         <p class="small p-0 m-0 text-secondary">Sept. 2019 - Juillet. 2020</p>
@@ -197,12 +345,42 @@
                             </div>  
                         </div>                      
                     </div>
-                    
                 </div>
+
+                <div class="py-2">
+                    <hr class="bg-dark my-1">
+                        <p class="competences text-dark m-0 p-0 small">P R O J E T S | A C A D E M I Q U E</p>
+                    <hr class="bg-dark my-1">
+                </div>
+
+                <div>
+                    <p class="competences pt-1 m-0 small text-dark">API REST avec Java Spring Boot pour une architecture microservices</p>
+                    <div class="text-secondary">
+                        <li class="small">
+                            Création et gestion des API REST pour une application de E-commerce basée sur une architecture microservices développée en <strong>Python</strong>, déployée avec <strong>Docker</strong> et automatisée (CI/CD) par <strong>Jenkins</strong>. Connexion des services via message broker <strong>Kafka</strong>, sécurisation des API par un système de génération de token avec <strong>JWT</strong> & tests de performances avec <strong>Locust</strong>.
+                        </li>                        
+                    </div>
+                </div>  
+
+                <div>
+                    <p class="competences pt-3 m-0 small text-dark">Analyse, traitement de donnée & IA</p>
+                    <div class="text-secondary">
+                        <li class="small">Récolte, traitement et distribution de donnée avec <strong>Microsoft Fabric</strong> & <strong>Alteryx</strong> pour la Prédiction des Élections
+                            Présidentielles 2027 en utilisant <strong>Python</strong> et les techniques de <strong>Machine Learning</strong> dans le but de créer une <strong>IA</strong> capable de faire des prédictions. Visualisation graphique de ses données avec <strong>PowerBi</strong>.</li>
+                    </div>
+                </div>  
+
             </div>
         </div>
         
     </div>
+
+    <script>
+        let nom = "D I A N T O U A D I - F R A Y"; 
+        let prenom = "K é v i n e";
+        let slash = " | "
+        document.getElementById("prenom-display").innerText = prenom + slash + nom;
+    </script>
 
     <!-- Inclure Bootstrap JS (facultatif) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
